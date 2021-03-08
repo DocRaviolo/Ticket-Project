@@ -44,7 +44,7 @@ public class Main {
 
             // Calcul du sous-total
             sousTotal = quantité * prix;
-            //System.out.println(sousTotal);
+            System.out.println(sousTotal);
             total.add(sousTotal);
 
             // on demande s'il y a autre chose, c'est ici qu'on recommence la boucle si réponse true
@@ -54,12 +54,12 @@ public class Main {
         }
 
         //j'imprime les totaux de chaque liste pour vérification
-        //System.out.println(total);
-        //System.out.println(totalQuantités);
-        //System.out.println(totalProduits);
+        System.out.println(total);
+        System.out.println(totalQuantités);
+        System.out.println(totalProduits);
 
         //calcul de la somme Totale
-        for (int i = 0; i < totalProduits.size(); i++) {
+        for (int i = 0; i < total.size(); i++) {
             sum += total.get(i);
             //   System.out.println(sum);
         }
